@@ -1,0 +1,187 @@
+@import url("../../index.css");
+
+
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-28);
+    background-color: var(--main-light-color);
+    padding: var(--size-16);
+    border-radius: var(--size-10);
+    text-align: right;
+    border-right: var(--size-16) solid var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.program-card:hover {
+    box-shadow: 1px 1px 10px 1px rgb(188, 188, 189);
+}
+
+.program-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-10);
+}
+
+.program-content {
+    width: 100%;
+}
+
+.program-type {
+    color: var(--secondary-color);
+}
+
+
+.program-details {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: var(--size-28);
+}
+
+.program-location,
+.program-time-frame,
+.program-date-content,
+.program-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--size-8);
+}
+
+.program-date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--size-10);
+}
+
+.program-details-button {
+    color: var(--secondary-color);
+    padding: var(--size-2) var(--size-28);
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--size-28);
+    transition: var(--transition);
+}
+
+.program-details-button:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-light-color);
+}
+
+.more-programs-button {
+    color: var(--primary-color);
+    padding: var(--size-6) var(--size-30);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--size-28);
+    transition: var(--transition);
+}
+
+.more-programs-button:hover {
+    background-color: var(--primary-color);
+    color: var(--main-light-color);
+}
+
+.highlighted-program .program-type {
+    color: var(--thirdly-color);
+}
+
+.highlighted-program {
+    border-right-color: var(--thirdly-color);
+}
+
+.highlighted-program .program-details-button {
+    color: var(--thirdly-color);
+    border-color: var(--thirdly-color);
+}
+
+.highlighted-program .program-details-button:hover {
+    background-color: var(--thirdly-color);
+    color: var(--main-light-color);
+}
+
+
+/*  */
+.program .program-type {
+    color: var(--thirdly-color);
+}
+
+.program {
+    border-right-color: var(--thirdly-color);
+}
+
+.program .program-details-button {
+    color: var(--thirdly-color);
+    border-color: var(--thirdly-color);
+}
+
+.program .program-details-button:hover {
+    background-color: var(--thirdly-color);
+    color: var(--main-light-color);
+}
+
+/* Change its color */
+.meeting .program-type {
+    color: rgb(248, 184, 205);
+}
+
+.meeting {
+    border-right-color: rgb(248, 184, 205);
+}
+
+.meeting .program-details-button {
+    color: rgb(248, 184, 205);
+    border-color: rgb(248, 184, 205);
+}
+
+.meeting .program-details-button:hover {
+    background-color: rgb(248, 184, 205);
+    color: var(--main-light-color);
+}
+
+/*  */
+.camp .program-type {
+    color: rgb(190, 167, 244);
+}
+
+.camp {
+    border-right-color: rgb(190, 167, 244);
+}
+
+.camp .program-details-button {
+    color: rgb(190, 167, 244);
+    border-color: rgb(190, 167, 244);
+}
+
+.camp .program-details-button:hover {
+    background-color: rgb(190, 167, 244);
+    color: var(--main-light-color);
+}
+
+/*  */
+.old-program .program-type {
+    color: rgb(188, 188, 189);
+}
+
+.old-program {
+    border-right-color: rgb(188, 188, 189);
+}
+
+.old-program .program-details-button {
+    color: rgb(188, 188, 189);
+    border-color: rgb(188, 188, 189);
+}
+
+.old-program .program-details-button:hover {
+    background-color: rgb(188, 188, 189);
+    color: var(--main-light-color);
+}
+
+
+/*  */
+.program-details-button.disabled:hover {
+    background-color: white;
+    color: rgb(188, 188, 189);
+    cursor: default;
+}

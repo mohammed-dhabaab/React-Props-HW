@@ -1,0 +1,29 @@
+@import url("../../index.css");
+
+.cards-container {
+    margin-top: 20px;
+
+    background-color: var(--thirdly-light-color);
+    padding: var(--container-y-padding) var(--container-x-padding);
+}
+
+.cards-container .section-container {
+    width: 100%;
+    color: var(--main-dark-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--size-60);
+}
+
+
+@media (min-width:740px) {
+    .cards-container .section-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1020px) {
+    .cards-container .section-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
