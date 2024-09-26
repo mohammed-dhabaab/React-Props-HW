@@ -160,6 +160,10 @@
 }
 
 /*  */
+.program-card.old-program:hover {
+    box-shadow: none;
+}
+
 .old-program .program-type {
     color: rgb(188, 188, 189);
 }
